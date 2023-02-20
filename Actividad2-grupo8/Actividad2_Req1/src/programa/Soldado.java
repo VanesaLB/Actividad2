@@ -1,3 +1,4 @@
+package programa;
 /**
 	 * Clase Soldado. En ella podremos crear soldados, cargar de balas y matar otros soldados.
 	 * <br>
@@ -75,8 +76,11 @@ public class Soldado {
 		 * @param sol en este parámetro le pasaremos un soldado al que va a matar o no.
 		 */
 		public void disparar(Soldado sol) {
-	        this.numeroBalas--;
-	        sol.estaMuerto = true;
+			//He añadido esta condición para que si no tiene balas no mate al otro soldado
+			if(this.numeroBalas > 0) {
+				this.numeroBalas--;
+				sol.estaMuerto = true;
+			}
 		}
 
 }

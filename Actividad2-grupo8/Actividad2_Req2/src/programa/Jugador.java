@@ -1,3 +1,4 @@
+package programa;
 /**
  * Creamos una clase Jugador con la que podremos crear jugadores. Saber cantidad de tarjetas amarillas, tarjetas rojas y expulsarlos.
  * <br>

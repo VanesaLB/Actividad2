@@ -1,3 +1,4 @@
+package programa;
 /**
  * <b>Clase Soldado</b>
  * <br>
